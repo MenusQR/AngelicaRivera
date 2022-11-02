@@ -1,0 +1,213 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* FONDO SERPIENTES */
+body{
+    background-image: url("../imagenes/fondo_serpientes.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+/* LOGO */
+.logo{
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+.logoAR1{
+    width: 25vw;
+    height: auto;
+}
+/* NAV */
+.navbar {
+    padding:0% !important;
+    justify-content: center !important;
+    background-image:linear-gradient(to right, rgba(255,0,0,0),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgba(255,0,0,0));;
+    color: rgb(0, 0, 0);
+    border-bottom: solid 2px;
+    border-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 0, 0),rgb(0, 0, 0),rgba(255,0,0,0)) 1;
+}
+
+.navbar-links {
+    height: 100%;
+    color: #000000;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-family:'Vogue';
+    letter-spacing: 0.8vw;
+    font-size: 1.2vw;
+    display: block;
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    padding: 1rem;
+}
+
+.navbar-links a:hover {
+    color: rgb(116, 116, 116);
+}
+
+.toggle-button {
+    position: absolute;
+    left: 20rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 17px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+/* CATALOGO */
+
+.menu-imagenes{
+    text-align: center;
+}
+
+.foto-modelo-pri{
+    height: 63vw;
+}
+
+.foto-modelo{
+    height: 31.5vw;
+}
+
+.col-imagenes{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.imagen-modelo{
+    font-family: montserrat;
+    color: black;
+    font-weight: 500px;
+
+}
+
+/* Light Box Animacion */
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    z-index: 1500 !important;
+} 
+.light-box img {
+    width: 30vw;
+    min-width: 230px;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.descripcion-plato{
+    padding-left: 4%;
+    padding-right: 4%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #ffff;
+    font-weight: 300;
+    margin: 0%;
+}
+
+.close{
+    display: block;
+    position: fixed;
+    line-height: 300px;
+    top: 30px;
+    right: 20px;
+    background: rgb(255, 0, 0) !important ;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    z-index:2000;
+}
+.close:active,.close:horver,.close:visited,.close:link{
+    background: rgb(255, 0, 0) !important ;
+    width: 10vw;
+    border-radius: 50%;
+}
+.closep{
+    color: black;
+    line-height: 35px;
+}
+
+.next{
+    display: block;
+}
+
+.next span{
+    color: rgb(255, 255, 255);
+    font-size: 4vw;
+}
+
+.arrowL{
+    margin-left: 0.85vw;
+}
