@@ -4,10 +4,24 @@ body{
     background-repeat: repeat-y;
     background-size: 100%;
 }
+/* FUENTE */
+@font-face {
+    font-family: "Vogue";
+    src: url(fuentes/Vogue.ttf);
+}
 /* LOGO */
 .logo{
     text-align: center;
-    margin: 5px 0 5px 0;
+    background-color: #ffffff;
+}
+.logoAR1{
+    width: 25vw;
+    height: auto;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
 }
 .logoAR1{
     width: 25vw;
@@ -15,9 +29,10 @@ body{
 }
 /* NAV */
 .navbar {
+    display: flex;
     padding:0% !important;
     justify-content: center !important;
-    background-image:linear-gradient(to right, rgba(255,0,0,0),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgba(255,0,0,0));;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     border-bottom: solid 2px;
     border-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 0, 0),rgb(0, 0, 0),rgba(255,0,0,0)) 1;
@@ -41,7 +56,7 @@ body{
 .navbar-links li a {
     font-family:'Vogue';
     letter-spacing: 0.8vw;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     display: block;
     text-decoration: none;
     color: rgb(31, 31, 31);
@@ -54,7 +69,7 @@ body{
 
 .toggle-button {
     position: absolute;
-    left: 20rem;
+    left: 80vw;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -112,7 +127,6 @@ body{
 }
 .imagen1-coleccion{
     width: 100%;
-    height: auto;
 }
 /* NOMBRE COLECCION */
 .colec-link1{
@@ -128,3 +142,48 @@ body{
     font-size: 1.5vw;
     letter-spacing: 0.2em;
 }
+/* PIE DE PAGINA */
+.lista{
+    list-style-type: none;
+    margin-left: 1vw;
+  }
+  .lista:first-child{
+    margin:0;
+  }
+  footer{
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    background-color: #dfdfdf;
+  }
+  .copyright,  .impressum{
+    text-align: center;
+  }
+  .logotipo{
+      height: 8vw;
+      max-height: 55px;
+  }
+   
+  .sozial{
+      text-align: center;
+      margin-bottom: 0%;
+  }
+  
+  .sozial ul{
+      padding: 0%;
+      text-align: center;
+      margin-bottom: 3px;
+  }
+  
+  .impressum h6, .impressum p {
+      margin-bottom: 0px;
+  }
+  @media (max-width: 768px) {
+    .lista{
+      margin-left: 0;
+      margin-bottom: 1vh;
+    }
+    
+   .sozial{
+      margin-bottom: 1vh;
+    }
+  }
